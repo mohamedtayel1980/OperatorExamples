@@ -2,12 +2,10 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            static void Main(string[] args)
-            {
+       
                 static void Main(string[] args)
                 {
+           
                     #region Section 1: Arithmetic Operators
                     Console.WriteLine("=== Arithmetic Operators ===");
 
@@ -38,10 +36,10 @@
                     int score = 100;
                     Console.WriteLine($"Initial Score: {score}");
 
-                    score += 50;
+                    score += 50;//score=score+50
                     Console.WriteLine($"Score after earning 50 points: {score}");
 
-                    score -= 30;
+                    score -= 30;//score=score-30
                     Console.WriteLine($"Score after losing 30 points: {score}");
 
                     score *= 2;
@@ -60,7 +58,7 @@
                     Console.WriteLine("=== Comparison Operators ===");
 
                     int a = 10;
-                    int b = 20;
+                    int b = 20;//?:
 
                     Console.WriteLine($"a = {a}, b = {b}");
                     Console.WriteLine($"Is a equal to b? (a == b): {a == b}");
@@ -91,62 +89,47 @@
                     Console.WriteLine("=== Increment and Decrement Operators ===");
 
                     // Initial value
-                    int a = 5;
+                    int ab = 5;
 
                     // Prefix Increment (++a)
                     Console.WriteLine("=== Prefix Increment ===");
-                    Console.WriteLine($"Original value of a: {a}");
-                    Console.WriteLine($"Using prefix (++a): {++a}");  // a is incremented first, then used
-                    Console.WriteLine($"Value of a after prefix increment: {a}");
+                    Console.WriteLine($"Original value of a: {ab}");
+                    Console.WriteLine($"Using prefix (++a): {++ab}");  
+                    Console.WriteLine($"Value of a after prefix increment: {ab}");
 
                     // Reset value
-                    a = 5;
+                    ab = 5;
 
                     // Postfix Increment (a++)
                     Console.WriteLine("\n=== Postfix Increment ===");
-                    Console.WriteLine($"Original value of a: {a}");
-                    Console.WriteLine($"Using postfix (a++): {a++}");  // a is used first, then incremented
-                    Console.WriteLine($"Value of a after postfix increment: {a}");
+                    Console.WriteLine($"Original value of a: {ab}");
+                    Console.WriteLine($"Using postfix (a++): {ab++}");  
+                    Console.WriteLine($"Value of a after postfix increment: {ab}");
 
                     // Reset value
-                    a = 5;
+                    ab = 5;
 
                     // Prefix Decrement (--a)
                     Console.WriteLine("\n=== Prefix Decrement ===");
-                    Console.WriteLine($"Original value of a: {a}");
-                    Console.WriteLine($"Using prefix (--a): {--a}");  // a is decremented first, then used
-                    Console.WriteLine($"Value of a after prefix decrement: {a}");
+                    Console.WriteLine($"Original value of a: {ab}");
+                    Console.WriteLine($"Using prefix (--a): {--ab}"); 
+                    Console.WriteLine($"Value of a after prefix decrement: {ab}");
 
                     // Reset value
-                    a = 5;
+                    ab = 5;
 
                     // Postfix Decrement (a--)
                     Console.WriteLine("\n=== Postfix Decrement ===");
-                    Console.WriteLine($"Original value of a: {a}");
-                    Console.WriteLine($"Using postfix (a--): {a--}");  // a is used first, then decremented
-                    Console.WriteLine($"Value of a after postfix decrement: {a}");
+                    Console.WriteLine($"Original value of a: {ab}");
+                    Console.WriteLine($"Using postfix (a--): {ab--}"); 
+                    Console.WriteLine($"Value of a after postfix decrement: {ab}");
 
                     Console.WriteLine();
                     #endregion
 
-                    #region Section 6: Bitwise Operators
-                    Console.WriteLine("=== Bitwise Operators ===");
-
-                    int x = 5;  // 5 in binary: 0101
-                    int y = 3;  // 3 in binary: 0011
-
-                    Console.WriteLine($"x = {x} (binary 0101), y = {y} (binary 0011)");
-                    Console.WriteLine($"Bitwise AND (x & y): {x & y}");  // 0101 & 0011 = 0001 (1)
-                    Console.WriteLine($"Bitwise OR (x | y): {x | y}");   // 0101 | 0011 = 0111 (7)
-                    Console.WriteLine($"Bitwise XOR (x ^ y): {x ^ y}");  // 0101 ^ 0011 = 0110 (6)")
-                    Console.WriteLine($"Bitwise NOT (~x): {~x}");        // ~0101 = 1010 (in 2's complement)
-                    Console.WriteLine($"Left Shift (x << 1): {x << 1}"); // 0101 << 1 = 1010 (10)
-                    Console.WriteLine($"Right Shift (x >> 1): {x >> 1}");// 0101 >> 1 = 0010 (2)
-
-                    Console.WriteLine();
-                    #endregion
+                   
                 }
             }
         }
-    }
-}
+    
+
